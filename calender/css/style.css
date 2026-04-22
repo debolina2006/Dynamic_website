@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card */
+.container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 320px;
+    animation: fadeIn 0.6s ease;
+}
+
+/* Title */
+h1 {
+    color: #ff4d88;
+    margin-bottom: 10px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header button {
+    background: #ff4d88;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header button:hover {
+    transform: scale(1.1);
+    background: #e6005c;
+}
+
+/* Days */
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Dates grid */
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 8px;
+}
+
+/* Each date */
+.dates div {
+    padding: 10px;
+    margin: 3px;
+    border-radius: 8px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/* Hover */
+.dates div:hover {
+    background: #ffe4ef;
+    transform: scale(1.05);
+}
+
+/* Today */
+.today {
+    background: #ff4d88;
+    color: white;
+    font-weight: bold;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
